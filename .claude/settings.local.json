@@ -32,7 +32,13 @@
       "Bash(timeout 30 tail -f C:\\\\Users\\\\Daekhon\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Daekhon-workspace-claude-nextjs-starters\\\\53ff1536-010a-4090-8572-991048ddcc60\\\\tasks\\\\bk8szleio.output)",
       "Bash(taskkill /PID 4084 /F)",
       "Bash(curl -I http://localhost:3000)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   },
   "enableAllProjectMcpServers": true,
