@@ -1,14 +1,12 @@
-import type { Metadata } from "next"
+"use client"
+
 import { Bell, Lock, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
-
-export const metadata: Metadata = {
-  title: "설정",
-}
 
 export default function SettingsPage() {
   return (
@@ -115,17 +113,15 @@ export default function SettingsPage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <Label htmlFor="email-notify">이메일 알림</Label>
-              <input
+              <Checkbox
                 id="email-notify"
-                type="checkbox"
                 defaultChecked
               />
             </div>
             <div className="flex items-center justify-between">
               <Label htmlFor="sms-notify">SMS 알림</Label>
-              <input
+              <Checkbox
                 id="sms-notify"
-                type="checkbox"
               />
             </div>
             <Button>저장</Button>

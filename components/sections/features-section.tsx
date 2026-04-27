@@ -1,4 +1,3 @@
-import * as Icons from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { FEATURES } from "@/lib/constants"
 
@@ -17,8 +16,7 @@ export function FeaturesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURES.map((feature) => {
-            const Icon =
-              Icons[feature.icon as keyof typeof Icons] as React.ElementType
+            const Icon = feature.icon
             return (
               <Card key={feature.title}>
                 <CardContent className="p-6">

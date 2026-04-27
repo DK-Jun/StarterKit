@@ -27,14 +27,12 @@ export function DashboardHeader() {
     <header className="flex h-16 items-center gap-4 border-b bg-background px-6 shrink-0">
       {/* 모바일 사이드바 트리거 */}
       <Sheet>
-        <Button variant="ghost" size="icon" className="md:hidden" asChild>
-          <SheetTrigger asChild>
-            <button className="md:hidden">
-              <Menu className="size-5" />
-              <span className="sr-only">사이드바 열기</span>
-            </button>
-          </SheetTrigger>
-        </Button>
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon" className="md:hidden">
+            <Menu className="size-5" />
+            <span className="sr-only">사이드바 열기</span>
+          </Button>
+        </SheetTrigger>
 
         <SheetContent side="left" className="w-64 p-0">
           <SheetHeader className="border-b px-6 py-4">

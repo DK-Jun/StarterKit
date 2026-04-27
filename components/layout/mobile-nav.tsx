@@ -15,14 +15,12 @@ import { NAV_LINKS, SITE_NAME } from "@/lib/constants"
 export function MobileNav() {
   return (
     <Sheet>
-      <Button variant="ghost" size="icon" asChild className="md:hidden">
-        <SheetTrigger asChild>
-          <button className="md:hidden">
-            <Menu className="size-5" />
-            <span className="sr-only">메뉴 열기</span>
-          </button>
-        </SheetTrigger>
-      </Button>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="md:hidden">
+          <Menu className="size-5" />
+          <span className="sr-only">메뉴 열기</span>
+        </Button>
+      </SheetTrigger>
 
       <SheetContent side="left" className="w-72 p-0">
         <SheetHeader className="border-b px-6 py-4">

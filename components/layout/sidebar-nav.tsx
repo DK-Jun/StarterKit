@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import * as Icons from "lucide-react"
 import { cn } from "@/lib/utils"
 import { SIDEBAR_LINKS } from "@/lib/constants"
 
@@ -12,7 +11,7 @@ export function SidebarNav() {
   return (
     <nav className="flex-1 px-3 py-4 space-y-1">
       {SIDEBAR_LINKS.map((link) => {
-        const Icon = Icons[link.icon as keyof typeof Icons] as React.ElementType
+        const Icon = link.icon
         const isActive = pathname === link.href
 
         return (
