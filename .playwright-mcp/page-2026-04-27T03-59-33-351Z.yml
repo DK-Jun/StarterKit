@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "StarterKit" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e7]:
+        - generic [ref=e8]: 다시 오셨군요
+        - generic [ref=e9]: 이메일로 로그인하세요
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: 이메일
+          - textbox "이메일" [ref=e14]:
+            - /placeholder: you@example.com
+        - generic [ref=e15]:
+          - generic [ref=e16]: 비밀번호
+          - textbox "비밀번호" [ref=e17]:
+            - /placeholder: ••••••••
+        - button "로그인" [ref=e18]
+      - generic [ref=e20]: 또는
+      - button "Google로 계속하기" [ref=e21]
+    - generic [ref=e22]:
+      - generic [ref=e23]: 계정이 없으신가요?
+      - link "회원가입" [ref=e24] [cursor=pointer]:
+        - /url: /register
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e30] [cursor=pointer]:
+    - img [ref=e31]
+  - alert [ref=e34]

@@ -1,0 +1,118 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7]:
+      - img [ref=e8]
+    - generic [ref=e11]:
+      - button "Open issues overlay" [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "1"
+          - generic [ref=e15]: "2"
+        - generic [ref=e16]:
+          - text: Issue
+          - generic [ref=e17]: s
+      - button "Collapse issues badge" [ref=e18]:
+        - img [ref=e19]
+  - generic [ref=e21]:
+    - complementary [ref=e23]:
+      - link "StarterKit" [ref=e25] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e26]:
+        - link "개요" [ref=e27] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e28]
+          - generic [ref=e33]: 개요
+        - link "분석" [ref=e34] [cursor=pointer]:
+          - /url: /dashboard/analytics
+          - img [ref=e35]
+          - generic [ref=e37]: 분석
+        - link "사용자" [ref=e38] [cursor=pointer]:
+          - /url: /dashboard/users
+          - img [ref=e39]
+          - generic [ref=e44]: 사용자
+        - link "설정" [ref=e45] [cursor=pointer]:
+          - /url: /dashboard/settings
+          - img [ref=e46]
+          - generic [ref=e49]: 설정
+    - generic [ref=e51]:
+      - banner [ref=e52]:
+        - button "테마 전환" [ref=e53]:
+          - img
+        - button "사" [ref=e54]:
+          - generic [ref=e56]: 사
+      - main [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - heading "사용자" [level=1] [ref=e61]
+              - paragraph [ref=e62]: 전체 사용자를 관리하세요.
+            - button "새 사용자 추가" [ref=e63]
+          - generic [ref=e64]:
+            - generic [ref=e66]: 사용자 목록
+            - generic [ref=e68]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e73]: 김철
+                  - generic [ref=e74]:
+                    - paragraph [ref=e75]: 김철수
+                    - generic [ref=e76]:
+                      - generic [ref=e77]:
+                        - img [ref=e78]
+                        - text: kim@example.com
+                      - generic [ref=e81]:
+                        - img [ref=e82]
+                        - text: 010-1234-5678
+                - generic [ref=e84]: 활성
+              - generic [ref=e86]:
+                - generic [ref=e87]:
+                  - generic [ref=e89]: 이영
+                  - generic [ref=e90]:
+                    - paragraph [ref=e91]: 이영미
+                    - generic [ref=e92]:
+                      - generic [ref=e93]:
+                        - img [ref=e94]
+                        - text: lee@example.com
+                      - generic [ref=e97]:
+                        - img [ref=e98]
+                        - text: 010-2345-6789
+                - generic [ref=e100]: 활성
+              - generic [ref=e102]:
+                - generic [ref=e103]:
+                  - generic [ref=e105]: 박민
+                  - generic [ref=e106]:
+                    - paragraph [ref=e107]: 박민준
+                    - generic [ref=e108]:
+                      - generic [ref=e109]:
+                        - img [ref=e110]
+                        - text: park@example.com
+                      - generic [ref=e113]:
+                        - img [ref=e114]
+                        - text: 010-3456-7890
+                - generic [ref=e116]: 대기
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - generic [ref=e121]: 정수
+                  - generic [ref=e122]:
+                    - paragraph [ref=e123]: 정수진
+                    - generic [ref=e124]:
+                      - generic [ref=e125]:
+                        - img [ref=e126]
+                        - text: jung@example.com
+                      - generic [ref=e129]:
+                        - img [ref=e130]
+                        - text: 010-4567-8901
+                - generic [ref=e132]: 활성
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - generic [ref=e137]: 이한
+                  - generic [ref=e138]:
+                    - paragraph [ref=e139]: 이한솔
+                    - generic [ref=e140]:
+                      - generic [ref=e141]:
+                        - img [ref=e142]
+                        - text: han@example.com
+                      - generic [ref=e145]:
+                        - img [ref=e146]
+                        - text: 010-5678-9012
+                - generic [ref=e148]: 비활성
+  - region "Notifications alt+T"
+  - alert [ref=e149]

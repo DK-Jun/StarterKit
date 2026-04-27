@@ -1,0 +1,150 @@
+- generic:
+  - generic [ref=e114] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e115]:
+      - img [ref=e116]
+    - generic [ref=e119]:
+      - button "Open issues overlay" [ref=e120]:
+        - generic [ref=e239]:
+          - generic [ref=e240]: "2"
+          - generic [ref=e241]: "3"
+        - generic [ref=e124]:
+          - text: Issue
+          - generic [ref=e125]: s
+      - button "Collapse issues badge" [ref=e126]:
+        - img [ref=e127]
+  - generic:
+    - generic:
+      - banner:
+        - button [expanded]:
+          - img
+          - generic: 사이드바 열기
+        - button:
+          - img
+        - button:
+          - generic:
+            - generic: 사
+      - main:
+        - generic:
+          - generic:
+            - heading [level=1]: 대시보드
+            - paragraph: 오늘의 현황을 확인하세요.
+          - generic:
+            - generic:
+              - generic:
+                - generic: 총 사용자
+                - img
+              - generic:
+                - paragraph: 12,345
+                - paragraph:
+                  - generic: +12%
+                  - text: 지난달 대비
+            - generic:
+              - generic:
+                - generic: 월 매출
+                - img
+              - generic:
+                - paragraph: ₩2,350,000
+                - paragraph:
+                  - generic: +8.2%
+                  - text: 지난달 대비
+            - generic:
+              - generic:
+                - generic: 이번 달 신규 가입
+                - img
+              - generic:
+                - paragraph: "573"
+                - paragraph:
+                  - generic: +3.1%
+                  - text: 지난 주 대비
+            - generic:
+              - generic:
+                - generic: 활성 사용자
+                - img
+              - generic:
+                - paragraph: "89"
+                - paragraph:
+                  - generic: "-2.5%"
+                  - text: 지난 주 대비
+          - generic:
+            - generic:
+              - generic:
+                - generic: 최근 활동
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 김
+                    - generic:
+                      - paragraph: 김철수
+                      - paragraph: 계정 생성
+                    - paragraph: 2시간 전
+                  - generic:
+                    - generic:
+                      - generic: 이
+                    - generic:
+                      - paragraph: 이영미
+                      - paragraph: 프로필 업데이트
+                    - paragraph: 4시간 전
+                  - generic:
+                    - generic:
+                      - generic: 박
+                    - generic:
+                      - paragraph: 박민준
+                      - paragraph: 구독 시작
+                    - paragraph: 1일 전
+                  - generic:
+                    - generic:
+                      - generic: 정
+                    - generic:
+                      - paragraph: 정수진
+                      - paragraph: 결제 완료
+                    - paragraph: 2일 전
+                  - generic:
+                    - generic:
+                      - generic: 이
+                    - generic:
+                      - paragraph: 이한솔
+                      - paragraph: 피드백 제출
+                    - paragraph: 3일 전
+            - generic:
+              - generic:
+                - generic: 빠른 작업
+              - generic:
+                - generic:
+                  - button:
+                    - img
+                    - generic: 사용자 초대
+                  - button:
+                    - img
+                    - generic: 보고서 생성
+                  - button:
+                    - img
+                    - generic: 결제 설정
+                  - button:
+                    - img
+                    - generic: 지원 요청
+  - region "Notifications alt+T"
+  - alert
+  - dialog [ref=e243]:
+    - link "StarterKit" [ref=e245] [cursor=pointer]:
+      - /url: /
+    - navigation [ref=e246]:
+      - link "개요" [ref=e247] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e248]
+        - generic [ref=e253]: 개요
+      - link "분석" [ref=e254] [cursor=pointer]:
+        - /url: /dashboard/analytics
+        - img [ref=e255]
+        - generic [ref=e257]: 분석
+      - link "사용자" [ref=e258] [cursor=pointer]:
+        - /url: /dashboard/users
+        - img [ref=e259]
+        - generic [ref=e264]: 사용자
+      - link "설정" [ref=e265] [cursor=pointer]:
+        - /url: /dashboard/settings
+        - img [ref=e266]
+        - generic [ref=e269]: 설정
+    - button "Close" [active] [ref=e270]:
+      - img
+      - generic [ref=e271]: Close
