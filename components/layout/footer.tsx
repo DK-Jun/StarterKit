@@ -46,17 +46,17 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <Link href="/docs" className="hover:text-foreground transition-colors">
-                  문서
+                  가이드
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="hover:text-foreground transition-colors">
-                  대시보드
+                <Link href="/#features" className="hover:text-foreground transition-colors">
+                  기능 소개
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-foreground transition-colors">
-                  홈
+                <Link href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+                  GitHub
                 </Link>
               </li>
             </ul>

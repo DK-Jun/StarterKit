@@ -9,9 +9,9 @@ import {
   Users,
 } from "lucide-react"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { TrendBadge } from "@/components/ui/trend-badge"
 
 export const metadata: Metadata = {
   title: "대시보드",
@@ -39,13 +39,7 @@ export default function DashboardPage() {
           <CardContent>
             <p className="text-2xl font-bold">12,345</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-emerald-600 bg-emerald-50 dark:bg-emerald-950"
-              >
-                +12%
-              </Badge>{" "}
-              지난달 대비
+              <TrendBadge value="+12%" /> 지난달 대비
             </p>
           </CardContent>
         </Card>
@@ -60,13 +54,7 @@ export default function DashboardPage() {
           <CardContent>
             <p className="text-2xl font-bold">₩2,350,000</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-emerald-600 bg-emerald-50 dark:bg-emerald-950"
-              >
-                +8.2%
-              </Badge>{" "}
-              지난달 대비
+              <TrendBadge value="+8.2%" /> 지난달 대비
             </p>
           </CardContent>
         </Card>
@@ -81,13 +69,7 @@ export default function DashboardPage() {
           <CardContent>
             <p className="text-2xl font-bold">573</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-emerald-600 bg-emerald-50 dark:bg-emerald-950"
-              >
-                +3.1%
-              </Badge>{" "}
-              지난 주 대비
+              <TrendBadge value="+3.1%" /> 지난 주 대비
             </p>
           </CardContent>
         </Card>
@@ -102,13 +84,7 @@ export default function DashboardPage() {
           <CardContent>
             <p className="text-2xl font-bold">89</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-red-600 bg-red-50 dark:bg-red-950"
-              >
-                -2.5%
-              </Badge>{" "}
-              지난 주 대비
+              <TrendBadge value="-2.5%" positive={false} /> 지난 주 대비
             </p>
           </CardContent>
         </Card>
@@ -124,13 +100,13 @@ export default function DashboardPage() {
           <CardContent>
             <div className="space-y-4">
               {[
-                { name: "김철수", action: "계정 생성", time: "2시간 전" },
-                { name: "이영미", action: "프로필 업데이트", time: "4시간 전" },
-                { name: "박민준", action: "구독 시작", time: "1일 전" },
-                { name: "정수진", action: "결제 완료", time: "2일 전" },
-                { name: "이한솔", action: "피드백 제출", time: "3일 전" },
-              ].map((activity, idx) => (
-                <div key={idx} className="flex gap-3 items-start">
+                { id: 1, name: "김철수", action: "계정 생성", time: "2시간 전" },
+                { id: 2, name: "이영미", action: "프로필 업데이트", time: "4시간 전" },
+                { id: 3, name: "박민준", action: "구독 시작", time: "1일 전" },
+                { id: 4, name: "정수진", action: "결제 완료", time: "2일 전" },
+                { id: 5, name: "이한솔", action: "피드백 제출", time: "3일 전" },
+              ].map((activity) => (
+                <div key={activity.id} className="flex gap-3 items-start">
                   <Avatar className="size-8 shrink-0">
                     <AvatarFallback>
                       {activity.name.slice(0, 1)}

@@ -1,16 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, LogOut, Settings, User } from "lucide-react"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import {
   Sheet,
   SheetContent,
@@ -20,6 +12,7 @@ import {
 } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
 import { SidebarNav } from "./sidebar-nav"
+import { UserDropdown } from "./user-dropdown"
 import { SITE_NAME } from "@/lib/constants"
 
 export function DashboardHeader() {
@@ -51,31 +44,7 @@ export function DashboardHeader() {
 
       {/* 우측 */}
       <ThemeToggle />
-
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="relative size-9 rounded-full p-0">
-            <Avatar className="size-9">
-              <AvatarFallback>사</AvatarFallback>
-            </Avatar>
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuItem>
-            <User className="size-4 mr-2" />
-            프로필
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Settings className="size-4 mr-2" />
-            설정
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem className="text-destructive focus:text-destructive">
-            <LogOut className="size-4 mr-2" />
-            로그아웃
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <UserDropdown />
     </header>
   )
 }

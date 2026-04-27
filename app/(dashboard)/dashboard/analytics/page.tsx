@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { BarChart3, TrendingUp, Users } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { TrendBadge } from "@/components/ui/trend-badge"
 
 export const metadata: Metadata = {
   title: "분석",
@@ -29,13 +29,7 @@ export default function AnalyticsPage() {
           <CardContent>
             <p className="text-2xl font-bold">45,231</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-emerald-600 bg-emerald-50 dark:bg-emerald-950"
-              >
-                +20.1%
-              </Badge>{" "}
-              지난 달 대비
+              <TrendBadge value="+20.1%" /> 지난 달 대비
             </p>
           </CardContent>
         </Card>
@@ -50,13 +44,7 @@ export default function AnalyticsPage() {
           <CardContent>
             <p className="text-2xl font-bold">89,421</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-emerald-600 bg-emerald-50 dark:bg-emerald-950"
-              >
-                +15.3%
-              </Badge>{" "}
-              지난 주 대비
+              <TrendBadge value="+15.3%" /> 지난 주 대비
             </p>
           </CardContent>
         </Card>
@@ -71,13 +59,7 @@ export default function AnalyticsPage() {
           <CardContent>
             <p className="text-2xl font-bold">3.24%</p>
             <p className="text-xs text-muted-foreground mt-1">
-              <Badge
-                variant="secondary"
-                className="text-red-600 bg-red-50 dark:bg-red-950"
-              >
-                -4.3%
-              </Badge>{" "}
-              지난 달 대비
+              <TrendBadge value="-4.3%" positive={false} /> 지난 달 대비
             </p>
           </CardContent>
         </Card>
