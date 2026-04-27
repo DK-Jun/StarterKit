@@ -22,7 +22,7 @@ export function LoginForm() {
       // 실제 인증 로직 연결 지점
       console.log("로그인 시도:", data)
       toast.success("로그인 성공! (데모)")
-    } catch (error) {
+    } catch {
       toast.error("로그인 실패")
     }
   }

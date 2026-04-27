@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Menu, LogOut, Settings, User } from "lucide-react"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -38,9 +39,9 @@ export function DashboardHeader() {
         <SheetContent side="left" className="w-64 p-0">
           <SheetHeader className="border-b px-6 py-4">
             <SheetClose asChild>
-              <a href="/" className="flex items-center gap-2 font-bold text-lg">
+              <Link href="/" className="flex items-center gap-2 font-bold text-lg">
                 {SITE_NAME}
-              </a>
+              </Link>
             </SheetClose>
           </SheetHeader>
           <SidebarNav />

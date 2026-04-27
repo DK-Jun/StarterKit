@@ -23,7 +23,7 @@ export function RegisterForm() {
     try {
       console.log("회원가입 시도:", data)
       toast.success("회원가입 성공! (데모)")
-    } catch (error) {
+    } catch {
       toast.error("회원가입 실패")
     }
   }

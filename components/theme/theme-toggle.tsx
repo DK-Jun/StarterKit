@@ -9,7 +9,10 @@ export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => {
+    const timer = setTimeout(() => setMounted(true), 0)
+    return () => clearTimeout(timer)
+  }, [])
 
   // SSR hydration mismatch 방지: 마운트 전 동일 크기 placeholder
   if (!mounted) {
